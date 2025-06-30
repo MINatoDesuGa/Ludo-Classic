@@ -85,6 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5566478996101220787}
+  - component: {fileID: 921612487899276421}
   - component: {fileID: 1207254788520040811}
   - component: {fileID: 4212252734846807975}
   - component: {fileID: 7228682344630032043}
@@ -109,11 +110,32 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8568355057695594491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &921612487899276421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6289676710180108924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8ee967808cc6a49abc6d7c0c5d0e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _diceImage: {fileID: 4212252734846807975}
+  _diceFaces:
+  - {fileID: 21300000, guid: 376865fea92cf7349bb46e9b0e422e7a, type: 3}
+  - {fileID: 21300000, guid: 95eac51a97275234eac89ea035f2a1bf, type: 3}
+  - {fileID: 21300000, guid: 8c68c392cebc9c047a06d44586cd8ebd, type: 3}
+  - {fileID: 21300000, guid: af07d95834771414d94396e5da87406d, type: 3}
+  - {fileID: 21300000, guid: b9447f7b1bdccdd42a7d7946f970ae88, type: 3}
+  - {fileID: 21300000, guid: ae88cd6bd79788c4eb40b2adb44114d3, type: 3}
+  _defaultSprite: {fileID: 21300000, guid: b315eb8233fc2264e9b9186f5aa064a7, type: 3}
 --- !u!222 &1207254788520040811
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -142,8 +164,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b315eb8233fc2264e9b9186f5aa064a7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
